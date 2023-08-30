@@ -1,0 +1,25 @@
+
+
+// Input a word
+Read word
+
+// Set initial values for start and end indices
+start = 0
+end = length(word) - 1
+
+// Iterate through the word until the start index surpasses the end index
+while start < end:
+    // Compare characters at start index and end index
+    if word[start] is not equal to word[end]:
+        // Characters don't match, word is not a palindrome
+        Print "Not a palindrome"
+        Exit
+
+    // Increment start index and decrement end index
+    start = start + 1
+    end = end - 1
+
+// All characters matched, word is a palindrome
+Print "Palindrome"
+
+End
