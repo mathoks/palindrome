@@ -1,0 +1,21 @@
+ALGORITHM FindDistinctSum
+VAR
+    set1: a set of integers
+    set2: a set of integers
+    distinctSum: the sum of all distinct elements from the sets
+BEGIN
+    distinctSum <- 0
+    FOR each element in set1
+        IF element NOT IN set2 THEN
+            distinctSum <- distinctSum + element
+        ENDIF
+    ENDFOR
+
+    FOR each element in set2
+        IF element NOT IN set1 THEN
+            distinctSum <- distinctSum + element
+        ENDIF
+    ENDFOR
+
+    RETURN distinctSum
+END
