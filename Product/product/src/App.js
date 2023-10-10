@@ -5,6 +5,8 @@ import Image from "./components/image";
 import Price from "./components/price";
 import Name from "./components/name";
 import Description from "./components/description";
+import { PlayerList } from "./components/playerList";
+
 
 
 
@@ -39,6 +41,7 @@ return (
   </>
 );
 }
+
 }
 // function App(props) {
 //   const firstName = props.firstName || "there";
