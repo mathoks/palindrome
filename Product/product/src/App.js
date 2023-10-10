@@ -32,12 +32,14 @@ render () {
 return (
   <>
   <botton onClick={this.componentDidMount}>Toggle Show </botton>
+  {this.state.show ? 
   <di>
     <h1>i am {this.state.fullName}</h1>
     <h2>{this.state.bio}</h2>
     <h3>{this.state.profession}</h3>
     <img src={this.state.imgSrc} alt="myimage" />
-  </di>
+  </di> : " "
+  }
   </>
 );
 }
